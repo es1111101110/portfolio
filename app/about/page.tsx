@@ -5,10 +5,10 @@ const skills = [
         category: "Design",
         items: ["Adobe XD", "Photoshop", "Illustrator", "Figma", "Premiere Pro"],
     },
-    {
-        category: "Development",
-        items: ["HTML5", "CSS3", "JavaScript", "TypeScript", "Smarty"],
-    },
+    // {
+    //     category: "Development",
+    //     items: ["HTML5", "CSS3","JavaScript","Typescript","Smarty"],
+    // },
     {
         category: "Platform",
         items: ["Shopify", "MakeShop", "E-store", "EC-CUBE", "FutureShop", "WordPress", "楽天市場"],
