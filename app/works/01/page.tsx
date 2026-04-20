@@ -1,3 +1,5 @@
+import Layout from "../../components/Layout";
+
 export default function Work01Page() {
     const metrics = [
         { label: "PV", value: "+200%" },
@@ -33,91 +35,88 @@ export default function Work01Page() {
     ];
 
     return (
-        <div className="max-w-5xl mx-auto px-6 py-24">
-            {/* Back */}
+        <Layout>
+            <div className="max-w-5xl mx-auto px-6 py-24">
 
-            <a href="/works"
-                className="text-sm text-neutral-400 hover:text-neutral-900 transition-colors tracking-widest uppercase">
-                ← Works
-            </a>
+                <a href="/works"
+                    className="text-sm text-neutral-400 hover:text-neutral-900 transition-colors tracking-widest uppercase"
+                >
+                    ← Works
+                </a>
+                <div className="mt-12 mb-16">
+                    <p className="text-sm tracking-widest uppercase text-[var(--accent)] mb-4">
+                        ECリニューアル
+                    </p>
+                    <h1 className="text-4xl font-light mb-6">
+                        ファッションブランド ECサイト大規模リニューアル
+                    </h1>
+                    <p className="text-neutral-400 text-sm">
+                        株式会社シカタ｜
 
-            {/* Header */}
-            <div className="mt-12 mb-16">
-                <p className="text-sm tracking-widest uppercase text-[var(--accent)] mb-4">
-                    ECリニューアル
-                </p>
-                <h1 className="text-4xl font-light mb-6">
-                    ファッションブランド ECサイト大規模リニューアル
-                </h1>
-                <p className="text-neutral-400 text-sm">
-                    株式会社シカタ｜
-
-                    <a href="https://www.ysaccs.com"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="hover:text-[var(--accent)] transition-colors"
-                    >
-                        ysaccs.com
-                    </a>
-                </p>
-            </div >
-
-            {/* Overview */}
-            < div className="mb-20" >
-                <p className="text-neutral-600 font-light leading-relaxed max-w-2xl">
-                    自社ECサイトのリニューアルおよび受注〜発送業務の内製化を、企画・ディレクション・コーディング・撮影・画像編集・パッケージデザインまで推進。
-                </p>
-            </div >
-
-            {/* Metrics */}
-            < div className="mb-20" >
-                <h2 className="text-sm tracking-widest uppercase text-[var(--accent)] mb-10">
-                    Results
-                </h2>
-                <div className="grid grid-cols-3 gap-6">
-                    {metrics.map((metric) => (
-                        <div
-                            key={metric.label}
-                            className="border border-neutral-100 p-8"
+                        <a href="https://www.ysaccs.com"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="hover:text-[var(--accent)] transition-colors"
                         >
-                            <p className="text-4xl font-light text-neutral-900 mb-3">
-                                {metric.value}
-                            </p>
-                            <p className="text-sm text-neutral-400">{metric.label}</p>
-                        </div>
-                    ))}
+                            ysaccs.com
+                        </a>
+                    </p>
                 </div>
-                <p className="text-xs text-neutral-300 mt-4">
-                    ※リニューアル後、半年間の平均
-                </p>
-            </div >
 
-            {/* Initiatives */}
-            < div >
-                <h2 className="text-sm tracking-widest uppercase text-[var(--accent)] mb-10">
-                    Initiatives
-                </h2>
-                <div className="grid grid-cols-1 gap-10">
-                    {initiatives.map((item) => (
-                        <div
-                            key={item.number}
-                            className="grid grid-cols-12 gap-6 border-t border-neutral-100 pt-8"
-                        >
-                            <div className="col-span-1">
-                                <span className="text-sm text-neutral-300 font-light">
-                                    {item.number}
-                                </span>
-                            </div>
-                            <div className="col-span-11">
-                                <h3 className="text-base font-medium mb-3">{item.title}</h3>
-                                <p className="text-neutral-500 font-light leading-relaxed">
-                                    {item.description}
+                <div className="mb-20">
+                    <p className="text-neutral-600 font-light leading-relaxed max-w-2xl">
+                        自社ECサイトのリニューアルおよび受注〜発送業務の内製化を、企画・ディレクション・コーディング・撮影・画像編集・パッケージデザインまで推進。
+                    </p>
+                </div>
+
+                <div className="mb-20">
+                    <h2 className="text-sm tracking-widest uppercase text-[var(--accent)] mb-10">
+                        Results
+                    </h2>
+                    <div className="grid grid-cols-3 gap-6">
+                        {metrics.map((metric) => (
+                            <div
+                                key={metric.label}
+                                className="border border-neutral-100 p-8"
+                            >
+                                <p className="text-4xl font-light text-neutral-900 mb-3">
+                                    {metric.value}
                                 </p>
+                                <p className="text-sm text-neutral-400">{metric.label}</p>
                             </div>
-                        </div>
-                    ))}
+                        ))}
+                    </div>
+                    <p className="text-xs text-neutral-300 mt-4">
+                        ※リニューアル後、半年間の平均
+                    </p>
                 </div>
-            </div >
-        </div >
+
+                <div>
+                    <h2 className="text-sm tracking-widest uppercase text-[var(--accent)] mb-10">
+                        Initiatives
+                    </h2>
+                    <div className="grid grid-cols-1 gap-10">
+                        {initiatives.map((item) => (
+                            <div
+                                key={item.number}
+                                className="grid grid-cols-12 gap-6 border-t border-neutral-100 pt-8"
+                            >
+                                <div className="col-span-1">
+                                    <span className="text-sm text-neutral-300 font-light">
+                                        {item.number}
+                                    </span>
+                                </div>
+                                <div className="col-span-11">
+                                    <h3 className="text-base font-medium mb-3">{item.title}</h3>
+                                    <p className="text-neutral-500 font-light leading-relaxed">
+                                        {item.description}
+                                    </p>
+                                </div>
+                            </div>
+                        ))}
+                    </div>
+                </div>
+            </div>
+        </Layout >
     );
 }
