@@ -30,7 +30,7 @@ export default function AboutPage() {
                 <div className="grid grid-cols-1 gap-6 mb-24 max-w-2xl">
                     <p className="text-neutral-600 font-light leading-relaxed">
                         高校卒業後、アクセサリー・ファッション業界を中心に20年以上のキャリアを歩んできました。
-                        EC部署の課長・店舗運営責任者として、サイト立ち上げから大規模リニューアル、
+                        EC部署の課長・店舗運営責任者として、サイト立ち上げからフルリニューアル、
                         システム導入、ブランディングまでを牽引。
                     </p>
                 </div>

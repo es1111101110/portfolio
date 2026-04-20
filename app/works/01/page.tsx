@@ -48,7 +48,7 @@ export default function Work01Page() {
                         ECリニューアル
                     </p>
                     <h1 className="text-4xl font-light mb-6">
-                        ファッションブランド ECサイト大規模リニューアル
+                        バッグ・ファッション雑貨ブランド<br />ECサイトフルリニューアル
                     </h1>
                     <p className="text-neutral-400 text-sm">
                         株式会社シカタ｜

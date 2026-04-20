@@ -16,9 +16,9 @@ const works: Work[] = [
     {
         id: "01",
         category: "ECリニューアル",
-        title: "ファッションブランド ECサイト大規模リニューアル",
+        title: "バッグ・ファッション雑貨ブランド ECサイトフルリニューアル",
         description:
-            "バッグ・ファッションブランドの自社ECサイトをモバイル対応・UI刷新。Google Analyticsを用いたデータ分析をもとにUX改善施策を立案・実行し、販売数および顧客数の継続的な向上を実現。",
+            "バッグ・ファッション雑貨ブランドの自社ECサイトをモバイル対応・UI刷新。Google Analyticsを用いたデータ分析をもとにUX改善施策を立案・実行し、販売数および顧客数の継続的な向上を実現。",
         tags: ["HTML/CSS", "JavaScript", "Google Analytics", "UX改善"],
         achievement: "販売数・顧客数の継続的向上を達成",
         image: "/images/work-01.png",
@@ -78,7 +78,13 @@ export default function WorksPage() {
                                 <p className="text-xs tracking-widest uppercase text-neutral-400 mb-2">
                                     {work.category}
                                 </p>
-                                <h3 className="text-xl font-medium mb-4">{work.title}</h3>
+                                <h3 className="text-xl font-medium mb-4">
+                                    {work.id === "01" ? (
+                                        <>バッグ・ファッション雑貨ブランド<br />ECサイトフルリニューアル</>
+                                    ) : (
+                                        work.title
+                                    )}
+                                </h3>
                                 {work.image && (
                                     <div
                                         className="w-full mb-6 overflow-y-auto"
