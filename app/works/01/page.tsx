@@ -43,6 +43,7 @@ export default function Work01Page() {
                 >
                     ← Works
                 </a>
+
                 <div className="mt-12 mb-16">
                     <p className="text-sm tracking-widest uppercase text-[var(--accent)] mb-4">
                         ECリニューアル
@@ -50,73 +51,82 @@ export default function Work01Page() {
                     <h1 className="text-4xl font-light mb-6">
                         バッグ・ファッション雑貨ブランド<br />ECサイトフルリニューアル
                     </h1>
-                    <p className="text-neutral-400 text-sm">
+                    <p className="text-neutral-400 text-sm mb-4">
                         株式会社シカタ｜
 
                         <a href="https://www.ysaccs.com"
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            className="hover:text-[var(--accent)] transition-colors"
-                        >
-                            ysaccs.com
-                        </a>
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="hover:text-[var(--accent)] transition-colors">
+                        ysaccs.com
+                    </a>
+                </p>
+                <div className="flex flex-col gap-1">
+                    <p className="text-xs text-neutral-400">
+                        <span className="tracking-widest uppercase mr-2">Period</span>
+                        2020年7月 〜 2024年10月
                     </p>
-                </div>
-
-                <div className="mb-20">
-                    <p className="text-neutral-600 font-light leading-relaxed max-w-2xl">
-                        自社ECサイトのリニューアルおよび受注〜発送業務の内製化を、企画・ディレクション・コーディング・撮影・画像編集・パッケージデザインまで推進。
+                    <p className="text-xs text-neutral-400">
+                        <span className="tracking-widest uppercase mr-2">Role</span>
+                        企画 / ディレクション / デザイン / コーディング / 撮影
                     </p>
-                </div>
-
-                <div className="mb-20">
-                    <h2 className="text-sm tracking-widest uppercase text-[var(--accent)] mb-10">
-                        Results
-                    </h2>
-                    <div className="grid grid-cols-3 gap-6">
-                        {metrics.map((metric) => (
-                            <div
-                                key={metric.label}
-                                className="border border-neutral-100 p-8"
-                            >
-                                <p className="text-4xl font-light text-neutral-900 mb-3">
-                                    {metric.value}
-                                </p>
-                                <p className="text-sm text-neutral-400">{metric.label}</p>
-                            </div>
-                        ))}
-                    </div>
-                    <p className="text-xs text-neutral-300 mt-4">
-                        ※リニューアル後、半年間の平均
-                    </p>
-                </div>
-
-                <div>
-                    <h2 className="text-sm tracking-widest uppercase text-[var(--accent)] mb-10">
-                        Initiatives
-                    </h2>
-                    <div className="grid grid-cols-1 gap-10">
-                        {initiatives.map((item) => (
-                            <div
-                                key={item.number}
-                                className="grid grid-cols-12 gap-6 border-t border-neutral-100 pt-8"
-                            >
-                                <div className="col-span-1">
-                                    <span className="text-sm text-neutral-300 font-light">
-                                        {item.number}
-                                    </span>
-                                </div>
-                                <div className="col-span-11">
-                                    <h3 className="text-base font-medium mb-3">{item.title}</h3>
-                                    <p className="text-neutral-500 font-light leading-relaxed">
-                                        {item.description}
-                                    </p>
-                                </div>
-                            </div>
-                        ))}
-                    </div>
                 </div>
             </div>
+
+            <div className="mb-20">
+                <p className="text-neutral-600 font-light leading-relaxed max-w-2xl">
+                    自社ECサイトのリニューアルおよび受注〜発送業務の内製化を、企画・ディレクション・コーディング・撮影・画像編集・パッケージデザインまで推進。
+                </p>
+            </div>
+
+            <div className="mb-20">
+                <h2 className="text-sm tracking-widest uppercase text-[var(--accent)] mb-10">
+                    Results
+                </h2>
+                <div className="grid grid-cols-3 gap-6">
+                    {metrics.map((metric) => (
+                        <div
+                            key={metric.label}
+                            className="border border-neutral-100 p-8"
+                        >
+                            <p className="text-4xl font-light text-neutral-900 mb-3">
+                                {metric.value}
+                            </p>
+                            <p className="text-sm text-neutral-400">{metric.label}</p>
+                        </div>
+                    ))}
+                </div>
+                <p className="text-xs text-neutral-300 mt-4">
+                    ※リニューアル後、半年間の平均
+                </p>
+            </div>
+
+            <div>
+                <h2 className="text-sm tracking-widest uppercase text-[var(--accent)] mb-10">
+                    Initiatives
+                </h2>
+                <div className="grid grid-cols-1 gap-10">
+                    {initiatives.map((item) => (
+                        <div
+                            key={item.number}
+                            className="grid grid-cols-12 gap-6 border-t border-neutral-100 pt-8"
+                        >
+                            <div className="col-span-1">
+                                <span className="text-sm text-neutral-300 font-light">
+                                    {item.number}
+                                </span>
+                            </div>
+                            <div className="col-span-11">
+                                <h3 className="text-base font-medium mb-3">{item.title}</h3>
+                                <p className="text-neutral-500 font-light leading-relaxed">
+                                    {item.description}
+                                </p>
+                            </div>
+                        </div>
+                    ))}
+                </div>
+            </div>
+        </div>
         </Layout >
     );
 }

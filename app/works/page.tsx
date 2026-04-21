@@ -10,6 +10,8 @@ type Work = {
     achievement: string;
     image: string | null;
     slug: string | null;
+    period: string;
+    role: string;
 };
 
 const works: Work[] = [
@@ -23,6 +25,8 @@ const works: Work[] = [
         achievement: "販売数・顧客数の継続的向上を達成",
         image: "/images/work-01.png",
         slug: "01",
+        period: "2020年7月 〜 2024年10月",
+        role: "企画 / ディレクション / デザイン / コーディング / 撮影",
     },
     {
         id: "02",
@@ -34,6 +38,8 @@ const works: Work[] = [
         achievement: "カテゴリ売上ランキング1位獲得",
         image: null,
         slug: null,
+        period: "2003年9月 〜 2005年2月",
+        role: "商品企画 / デザイン / 店舗運営",
     },
     {
         id: "03",
@@ -45,6 +51,8 @@ const works: Work[] = [
         achievement: "構築から運用まで一気通貫で対応",
         image: null,
         slug: null,
+        period: "フリーランス期間",
+        role: "ECサイト構築 / Webデザイン / グラフィックデザイン",
     },
     {
         id: "04",
@@ -56,6 +64,8 @@ const works: Work[] = [
         achievement: "企画デザイン賞受賞",
         image: "/images/work-03.png",
         slug: null,
+        period: "2015年7月 〜 2019年8月",
+        role: "アートディレクション / UXデザイン / プロジェクト管理",
     },
 ];
 
@@ -85,6 +95,16 @@ export default function WorksPage() {
                                         work.title
                                     )}
                                 </h3>
+                                <div className="flex flex-col gap-1 mb-6">
+                                    <p className="text-xs text-neutral-400">
+                                        <span className="tracking-widest uppercase mr-2">Period</span>
+                                        {work.period}
+                                    </p>
+                                    <p className="text-xs text-neutral-400">
+                                        <span className="tracking-widest uppercase mr-2">Role</span>
+                                        {work.role}
+                                    </p>
+                                </div>
                                 {work.image && (
                                     <div
                                         className="w-full mb-6 overflow-y-auto"
