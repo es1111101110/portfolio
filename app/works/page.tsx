@@ -9,7 +9,7 @@ type Work = {
     tags: string[];
     achievement: string;
     image: string | null;
-    slug: string | null;
+    slug: string;
     period: string;
     role: string;
 };
@@ -37,7 +37,7 @@ const works: Work[] = [
         tags: ["楽天市場", "商品企画", "アートディレクション"],
         achievement: "カテゴリ売上ランキング1位獲得",
         image: null,
-        slug: null,
+        slug: "02",
         period: "2003年9月 〜 2005年2月",
         role: "商品企画 / デザイン / 店舗運営",
     },
@@ -50,7 +50,7 @@ const works: Work[] = [
         tags: ["Shopify", "WordPress", "HTML/CSS", "グラフィックデザイン"],
         achievement: "構築から運用まで一気通貫で対応",
         image: null,
-        slug: null,
+        slug: "03",
         period: "フリーランス期間",
         role: "ECサイト構築 / Webデザイン / グラフィックデザイン",
     },
@@ -63,7 +63,7 @@ const works: Work[] = [
         tags: ["UXデザイン", "ブランディング", "Photoshop", "Illustrator"],
         achievement: "企画デザイン賞受賞",
         image: "/images/work-03.png",
-        slug: null,
+        slug: "04",
         period: "2015年7月 〜 2019年8月",
         role: "アートディレクション / UXデザイン / プロジェクト管理",
     },
@@ -133,19 +133,17 @@ export default function WorksPage() {
                                     ))}
                                 </div>
                                 <p className="text-sm text-[var(--accent)]">{work.achievement}</p>
-                                {work.slug && (
 
-                                    <a href={`/works/${work.slug}`}
-                                        className="inline-block mt-3 text-xs tracking-widest uppercase text-neutral-400 hover:text-neutral-900 transition-colors"
-                                    >
-                                        詳細を見る →
-                                    </a>
-                                )}
+                                <a href={`/works/${work.slug}`}
+                                    className="inline-block mt-3 text-xs tracking-widest uppercase text-neutral-400 hover:text-neutral-900 transition-colors"
+                                >
+                                    詳細を見る →
+                                </a>
                             </div>
                         </div>
                     ))}
                 </div>
             </div>
-        </Layout >
+        </Layout>
     );
 }
