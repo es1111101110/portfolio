@@ -67,6 +67,19 @@ const works: Work[] = [
         period: "2015年7月 〜 2019年8月",
         role: "アートディレクション / UXデザイン / プロジェクト管理",
     },
+    {
+    id: "05",
+    category: "バナー・グラフィックデザイン",
+    title: "バナー・ロゴデザイン",
+    description:
+        "ファッション・バッグ・ジュエリーブランドのECサイト向けバナーおよびロゴデザインを担当。セール・新商品・コラボレーションなど、目的に合わせたビジュアル制作を行いました。",
+    tags: ["Photoshop", "Illustrator", "バナーデザイン", "ロゴデザイン"],
+    achievement: "複数ブランドのビジュアル制作を担当",
+    image: null,
+    slug: "05",
+    period: "2015年 〜 2024年",
+    role: "バナーデザイン / ロゴデザイン / アートディレクション",
+},
 ];
 
 export default function WorksPage() {
