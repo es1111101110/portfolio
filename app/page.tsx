@@ -15,7 +15,6 @@ export default function Home() {
             Emari Sekikawa
           </h2>
           <p className="text-neutral-500 text-lg font-light leading-relaxed max-w-xl mb-12">
-            ECの企画・設計・制作・運用を横断したプロジェクト推進が強みです。
           </p>
           <div className="flex items-center gap-6">
 
