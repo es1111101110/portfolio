@@ -43,10 +43,23 @@ const works: Work[] = [
     },
     {
         id: "03",
-        category: "Shopify・フリーランス",
+        category: "Shopify・EC構築",
+        title: "Shopify ECサイト構築（maison vert / veganview）",
+        description:
+            "環境配慮素材を扱う2つのバッグブランドのShopify ECサイトを構築。既存テーマをブランドの世界観に合わせてカスタマイズし、各種決済・配送アプリの導入・設定まで対応。いずれも公開・稼働中で、実際のサイトをご覧いただけます。",
+        tags: ["Shopify", "テーマカスタマイズ", "決済導入", "配送アプリ"],
+        achievement: "公開・稼働中のサイトを掲載",
+        image: null,
+        slug: "shopify",
+        period: "2020年7月 〜 2024年10月",
+        role: "ECサイト構築 / テーマカスタマイズ / 決済・配送アプリ導入",
+    },
+    {
+        id: "04",
+        category: "EC構築",
         title: "ECサイト構築・運用支援（フリーランス）",
         description:
-            "フリーランスとしてShopifyを含むECサイトの構築・運用全般、コーポレートサイト制作、グラフィックデザイン・DTPなど幅広く対応。",
+            "Makeshop、Estore、モールなどのECサイトの構築・運用全般、コーポレートサイト制作、グラフィックデザイン・DTPなど幅広く対応。",
         tags: ["Shopify", "WordPress", "HTML/CSS", "グラフィックデザイン"],
         achievement: "構築から運用まで一気通貫で対応",
         image: null,
@@ -55,7 +68,7 @@ const works: Work[] = [
         role: "ECサイト構築 / Webデザイン / グラフィックデザイン",
     },
     {
-        id: "04",
+        id: "05",
         category: "ブランディング・クラウドファンディング",
         title: "ジュエリーブランド クラウドファンディング",
         description:
@@ -68,18 +81,18 @@ const works: Work[] = [
         role: "アートディレクション / UXデザイン / プロジェクト管理",
     },
     {
-    id: "05",
-    category: "バナー・グラフィックデザイン",
-    title: "バナー・ロゴデザイン",
-    description:
-        "ファッション・バッグ・ジュエリーブランドのECサイト向けバナーおよびロゴデザインを担当。セール・新商品・コラボレーションなど、目的に合わせたビジュアル制作を行いました。",
-    tags: ["Photoshop", "Illustrator", "バナーデザイン", "ロゴデザイン"],
-    achievement: "複数ブランドのビジュアル制作を担当",
-    image: null,
-    slug: "05",
-    period: "2015年 〜 2024年",
-    role: "バナーデザイン / ロゴデザイン / アートディレクション",
-},
+        id: "06",
+        category: "バナー・グラフィックデザイン",
+        title: "バナー・ロゴデザイン",
+        description:
+            "ファッション・バッグ・ジュエリーブランドのECサイト向けバナーおよびロゴデザインを担当。セール・新商品・コラボレーションなど、目的に合わせたビジュアル制作を行いました。",
+        tags: ["Photoshop", "Illustrator", "バナーデザイン", "ロゴデザイン"],
+        achievement: "複数ブランドのビジュアル制作を担当",
+        image: null,
+        slug: "05",
+        period: "2015年 〜 2024年",
+        role: "バナーデザイン / ロゴデザイン / アートディレクション",
+    },
 ];
 
 export default function WorksPage() {
