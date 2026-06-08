@@ -29,9 +29,28 @@ export default function AboutPage() {
                 {/* Bio */}
                 <div className="grid grid-cols-1 gap-6 mb-24 max-w-2xl">
                     <p className="text-neutral-600 font-light leading-relaxed">
-                        高校卒業後、アクセサリー・ファッション業界を中心に20年以上のキャリアを歩んできました。
-                        EC部署の課長・店舗運営責任者として、サイト立ち上げからフルリニューアル、
-                        システム導入、ブランディングまでを牽引。
+                        EC・WEBディレクション
+                        • ECサイトの新規立ち上げ・プラットフォーム移行・大規模リニューアルの主導（EC-CUBE / Shopify /
+                        futureshop / Makeshop / E-store）
+                        • 要件定義・業務フロー設計・運用設計など上流工程の対応経験
+                        • 外注制作会社のディレクション・コスト最適化
+                        データ分析・改善
+                        • Google Analyticsを用いたユーザー行動分析・CVR改善施策の立案・実行
+                        • A/Bテストによる成約率・顧客満足度の向上
+                        システム導入・PM
+                        • POS・在庫管理・EC-CUBE等のシステム導入推進（コスト定量化→経営層への提案→API連携まで一
+                        気通貫）
+                        • 複数ベンダー・社内SE・開発会社との折衝・調整
+                        フロントエンド・制作
+                        • HTML / CSS / JavaScript / Smartyによるページ制作・実装
+                        • Adobe XD / Photoshop / Illustratorを用いたUI設計・グラフィック制作
+                        マーケティング・販促
+                        • SNS運用・広告・販促企画・年間予算策定と管理
+                        • クラウドファンディング運営（Makuake）
+                        マネジメント
+                        • 最大20名規模のチームマネジメント・育成・外注ディレクション
+                        その他
+                        • ローコード開発（Filemaker）
                     </p>
                 </div>
 
