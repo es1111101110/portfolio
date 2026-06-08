@@ -4,7 +4,7 @@ export default function Work03Page() {
     const projects = [
         {
             industry: "伝統工芸・ライフスタイル",
-            service: "Makeshop 構築・運用",
+            service: "Makeshop・shopify 構築・運用",
             description:
                 "京都の老舗ブランドのECサイト構築・運用を担当。ブランドの世界観を損なわないデザインと、使いやすい購買導線の設計を両立しました。",
         },
@@ -75,7 +75,7 @@ export default function Work03Page() {
 
                 <div className="mb-20">
                     <p className="text-neutral-600 font-light leading-relaxed max-w-2xl">
-                        フリーランスとして、多業種のECサイト構築・運用支援を担当。Shopifyをはじめ各種プラットフォームに対応し、サイト設計からデザイン・実装・運用まで一気通貫で対応しました。守秘義務の関係上、具体的なビジュアルはお示しできませんが、詳細は面談の場でお伝えできます。
+                        フリーランスとして、多業種のECサイト構築・運用支援を担当。Shopifyをはじめ各種プラットフォームに対応し、サイト設計からデザイン・実装・運用まで一気通貫で対応しました。
                     </p>
                 </div>
 
