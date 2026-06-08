@@ -51,7 +51,7 @@ export default function Work03Page() {
                 </a>
                 <div className="mt-12 mb-16">
                     <p className="text-sm tracking-widest uppercase text-[var(--accent)] mb-4">
-                        Shopify・フリーランス
+                        EC構築
                     </p>
                     <h1 className="text-4xl font-light mb-6">
                         ECサイト構築・運用支援
