@@ -46,7 +46,7 @@ const works: Work[] = [
         category: "Shopify・EC構築",
         title: "Shopify ECサイト構築（maison vert / veganview）",
         description:
-            "環境配慮素材を扱う2つのバッグブランドのShopify ECサイトを構築。既存テーマをブランドの世界観に合わせてカスタマイズし、各種決済・配送アプリの導入・設定まで対応。いずれも公開・稼働中で、実際のサイトをご覧いただけます。",
+            "環境配慮素材を扱う2つのバッグブランドのShopify ECサイトを構築。既存テーマをブランドの世界観に合わせてカスタマイズし、各種決済・配送アプリの導入・設定まで対応。",
         tags: ["Shopify", "テーマカスタマイズ", "決済導入", "配送アプリ"],
         achievement: "公開・稼働中のサイトを掲載",
         image: null,
